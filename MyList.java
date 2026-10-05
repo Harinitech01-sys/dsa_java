@@ -1,5 +1,5 @@
 
-//insert at beginning
+//insert at beginning-----------------------------------------------------------------------------------------------------------------
 // class Node {
 //     int data;
 //     Node next;
@@ -43,7 +43,7 @@
 
    
 
-//INSERT AT END
+//INSERT AT END---------------------------------------------------------------------------------------------------------------------
 
 // class Node {
 //     int data;
@@ -108,7 +108,7 @@
 //     }
 // }
 
-//INSERT AT POSITION
+//INSERT AT POSITION------------------------------------------------------------------------------------------------------------------
 // class Node {
 //     int data;
 //     Node next;
@@ -195,8 +195,53 @@
 //     }
 // }
 
+//Insert at a value-------------------------------------------------------------------------------------------------------------------------
 
-//UPDATE NODE
+// class Node:
+//     def __init__(self, data):
+//         self.data = data
+//         self.next = None
+
+
+// class LinkedList:
+//     def __init__(self):
+//         self.head = None
+
+//     def insert_at_value(self, value, new_value):
+//         temp = self.head
+
+//         while temp is not None:
+//             if temp.data == value:
+//                 new_node = Node(new_value)
+//                 new_node.next = temp.next
+//                 temp.next = new_node
+//                 return
+
+//             temp = temp.next
+
+//         print("Value not found")
+
+//     def display(self):
+//         temp = self.head
+//         while temp is not None:
+//             print(temp.data, end=" -> ")
+//             temp = temp.next
+//         print("None")
+
+
+
+// ll = LinkedList()
+
+// ll.head = Node(10)
+// ll.head.next = Node(20)
+// ll.head.next.next = Node(30)
+
+
+// ll.insert_at_value(20, 25)
+
+// ll.display()
+
+//UPDATE NODE-----------------------------------------------------------------------------------------------------------------------
 
 // class Node {
 //     int data;
@@ -277,7 +322,86 @@
 //         }
 //     }
 
-//delete at beginning
+//UPDATE BY VALUE------------------------------------------------------------------------------------------------------------------------------
+// class Node {
+//     int data;
+//     Node next;
+
+//     Node(int n) {
+//         this.data = n;
+//         this.next = null;
+//     }
+// }
+
+// class MyLinkedList {
+//     Node head = null;
+//     Node tail = null;
+
+//     void insertbeg(int num) {
+//         Node newnode = new Node(num);
+
+//         if (head == null) {
+//             head = newnode;
+//             tail = newnode;
+//         } else {
+//             newnode.next = head;
+//             head = newnode;
+//         }
+//     }
+
+//     void insertend(int num) {
+//         Node newnode = new Node(num);
+
+//         if (head == null) {
+//             head = newnode;
+//             tail = newnode;
+//         } else {
+//             tail.next = newnode;
+//             tail = newnode;
+//         }
+//     }
+
+// void updatebyvalue(int old,int cur){
+//         Node temp=head;
+//         while(temp!=null){
+//             if(temp.data==old){
+//                 temp.data=cur;
+//             }
+//             temp=temp.next;
+//         }
+//     }
+
+//     void display() {
+//         Node temp = head;
+
+//         while (temp != null) {
+//             System.out.println(temp.data);
+//             temp = temp.next;
+//         }
+//     }
+// }
+//     public class MyList {
+//         public static void main(String[] args) {
+
+//             MyLinkedList list = new MyLinkedList();
+
+//             list.insertend(10);
+//             list.insertend(20);
+//             list.insertend(30);
+//             list.insertend(40);
+
+//             System.out.println("Before update:");
+//             list.display();
+
+//             list.update(20, 25);
+
+//             System.out.println("After update:");
+//             list.display();
+//         }
+//     }
+
+
+//delete at beginning------------------------------------------------------------------------------------------------------------
 
 // class Node {
 //     int data;
@@ -341,7 +465,7 @@
 // }
 
 
-//delete at end
+//delete at end------------------------------------------------------------------------------------------------------------------------------
 
 // class Node {
 //     int data;
@@ -413,7 +537,7 @@
 // }
 
 
-//. Delete by value
+//. Delete by value---------------------------------------------------------------------------------------------------------------------------
 
 // class Node {
 //     int data;
@@ -497,7 +621,7 @@
 //     }
 // }
 
-//Delete at a specific position
+//Delete at a specific position------------------------------------------------------------------------------------------------------------------
 
 // class Node {
 //     int data;
